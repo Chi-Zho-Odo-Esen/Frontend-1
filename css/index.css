@@ -61,6 +61,7 @@ h1 {
     width: 500px;
     padding: 20px;
     border-radius: 10%;
+    aspect-ratio: 5/7;
 }
 
 .interests-section {
