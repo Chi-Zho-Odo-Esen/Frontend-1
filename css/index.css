@@ -72,6 +72,11 @@ h3 {
     aspect-ratio: 5/7;
 }
 
+.short-information-section__text {
+    font-size: 25px;
+    font-weight: bold;
+}
+
 .interests-section {
     display: flex;
     flex-direction: column;
@@ -81,8 +86,13 @@ h3 {
     padding: unset;
 }
 
-.interests-list__item {
+.interests-list__card {
     padding: 0 10px;
+}
+
+.card__text {
+    font-size: 25px;
+    font-weight: bold;
 }
 
 .skills-list {
@@ -147,7 +157,7 @@ h3 {
         flex-direction: column;
     }
 
-    .interests-list__item {
+    .interests-list__card {
         padding: 0;
     }
 
