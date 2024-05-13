@@ -9,12 +9,12 @@ const hidePopupWithTimer = () => {
     popupPopupWithTimer.classList.remove("popup_shown")
 }
 const showIfFirstTime = () => {
-    if (!localStorage.getItem("is-popup-with-timer-shown")) {
+    if (!localStorage.getItem("is-popup-with-timer-closed")) {
         setTimeout(showPopupWithTimer, 5000)
     }
 }
 const setPopupWithTimerShown = () => {
-    localStorage.setItem("is-popup-with-timer-shown", "true")
+    localStorage.setItem("is-popup-with-timer-closed", "true")
 }
 
 showIfFirstTime()
