@@ -1,175 +1,26 @@
-body {
+@import url("./header.css");
+
+@import url("./main.css");
+
+@import url("./footer.css");
+
+@import url("./popups.css");
+
+.page {
     margin: auto;
     width: 70%;
     max-width: 1000px;
     font-family: 'Comic Sans MS', sans-serif;
+    overflow-x: hidden;
 }
 
-h1 {
+.page__title {
     font-size: 35px;
 }
 
-h2 {
-    font-size: 30px;
-}
-
-h3 {
-    font-size: 25px;
-}
-
-.header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid gray;
-    padding: 20px;
-}
-
-.header__logo {
-    width: 8%;
-    padding: 5px;
-}
-
-.navigation {
-    display: flex;
-}
-
-.navigation__link {
-    padding: 5px;
-    color: black;
-    font-weight: 700;
-    font-size: 25px;
-    line-height: 25px;
-    text-decoration: none;
-}
-
-.column {
-    display: flex;
-    flex-direction: column;
-}
-
-.row {
-    display: flex;
-    flex-direction: row;
-}
-
-.section {
-    padding: 1%;
-}
-
-.section-header {
-    text-align: center;
-}
-
-.short-information-section {
-    align-items: flex-start;
-}
-
-.short-information-section__img {
-    width: 500px;
-    padding: 20px;
-    border-radius: 10%;
-    aspect-ratio: 5/7;
-}
-
-.short-information-section__text {
-    font-size: 25px;
-    font-weight: bold;
-}
-
-.interests-section {
-    display: flex;
-    flex-direction: column;
-}
-
-.interests-list {
-    padding: unset;
-}
-
-.interests-list__card {
-    padding: 0 10px;
-}
-
-.card__text {
-    font-size: 25px;
-    font-weight: bold;
-}
-
-.skills-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: unset;
-}
-
-.skills-list__item {
-    padding: 0 10px;
-}
-
-.footer {
-    display: flex;
-    justify-content: flex-end;
-    border-top: 1px solid gray;
-    padding: 20px;
-}
-
-.footer__link {
-    padding: 5px;
-    color: black;
-    font-weight: 700;
-    font-size: 25px;
-    line-height: 25px;
-    text-decoration: none;
-}
-
 @media (max-width: 1250px) {
-    body {
+    .page {
         width: 95%;
         max-width: 1000px;
-    }
-
-    .header {
-        padding: 10px;
-        text-align: right;
-        align-items: flex-start;
-    }
-
-    .header__logo {
-        width: 20%;
-        padding: 5px;
-    }
-
-    .navigation {
-        flex-direction: column;
-    }
-
-    .short-information-section {
-        flex-direction: column;
-    }
-
-    .short-information-section__img {
-        width: 90%;
-        padding: 20px;
-        border-radius: 10%;
-    }
-
-    .interests-list {
-        flex-direction: column;
-    }
-
-    .interests-list__card {
-        padding: 0;
-    }
-
-    .skills-list {
-        display: flex;
-        flex-wrap: unset;
-        justify-content: unset;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .skills-list__item {
-        padding: 0;
     }
 }

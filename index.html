@@ -18,11 +18,12 @@
     <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
     <link rel="stylesheet" href="./css/index.css">
 </head>
-<body>
+<body class="page">
 <header class="header">
     <img class="header__logo" src="./img/portfolio_icon.webp" alt="">
     <nav class="navigation">
         <a class="navigation__link" href="#short-information-section">Краткая информация</a>
+        <a class="navigation__link" href="#gallery-section">Галлерея</a>
         <a class="navigation__link" href="#interests-section">Интересы</a>
         <a class="navigation__link" href="#skills-section">Навыки</a>
         <a class="navigation__link" href="#footer">Контакты</a>
@@ -33,41 +34,69 @@
     <section id="short-information-section" class="row section short-information-section">
         <img class="short-information-section__img" src="./img/photo.webp" alt="">
         <div class="column">
-            <h1>Студент 1 курса ВШПИ МФТИ-Яндекс</h1>
-            <p class="short-information-section__text">
+            <h1 class="page__title">Студент 1 курса ВШПИ МФТИ-Яндекс</h1>
+            <p class="text-content short-information-section__text">
                 Имя: Эсэн <br>
                 Образование: Среднее общее образование <br>
-                Опыт работы: Нет <br>
+                До получения высшего образования осталось: <br>
+            </p>
+            <div class="countdown-timer">
+                <div class="text-content countdown-timer__item countdown-timer__days">0</div>
+                <div class="text-content countdown-timer__item countdown-timer__hours">0</div>
+                <div class="text-content countdown-timer__item countdown-timer__minutes">0</div>
+                <div class="text-content countdown-timer__item countdown-timer__seconds">0</div>
+            </div>
 
+            <p class="text-content short-information-section__text">
                 <br>
+                Опыт работы: Нет <br>
                 Цель: Зарегистрироваться как активный и мотивированный соискатель, готовый работать и развиваться в
                 различных сферах деятельности. <br>
             </p>
         </div>
     </section>
+    <hr>
+    <section id="gallery-section" class="gallery-section">
+        <h2 class="text-title gallery__title">Галлерея</h2>
+        <ul class="gallery">
+            <li class="gallery__item">
+                <img class="gallery__image" src="./img/gallery_photo_1.webp" alt="Зимний Урал">
+            </li>
+            <li class="gallery__item">
+                <img class="gallery__image" src="./img/gallery_photo_2.webp" alt="Отражение ноября">
+            </li>
+            <li class="gallery__item">
+                <img class="gallery__image" src="./img/gallery_photo_3.webp" alt="Осень в долине Инегень">
+            </li>
+            <li class="gallery__item">
+                <img class="gallery__image" src="./img/gallery_photo_4.webp" alt="Отражение">
+            </li>
+        </ul>
+    </section>
+    <hr>
     <section id="interests-section" class="section interests-section">
-        <h2 class="section-header">Интересы</h2>
+        <h2 class="text-title section-header">Интересы</h2>
         <ul class="row interests-list">
-            <li class="column interests-list__card">
-                <h2 class="card__header">Математический анализ</h2>
-                <p class="card__text">
+            <li class="card column interests-list__card">
+                <h2 class="text-title card__header">Математический анализ</h2>
+                <p class="text-content card__text">
                     Математический анализ - то, что позволяет мне испытывать интеллектуальный восторг
                     от исследования глубин мироздания с помощью чисел и символов. Решение задач и доказательство теорем
                     развивает критическое мышление и интуицию, а также позволяет ощутить себя Архимедом, Пифагором или
                     Ньютоном в поисках универсальных законов.
                 </p>
             </li>
-            <li class="column interests-list__card">
-                <h2 class="card__header">Линейная алгебра</h2>
-                <p class="card__text">
+            <li class="card column interests-list__card">
+                <h2 class=" text-title card__header">Линейная алгебра</h2>
+                <p class="text-content card__text">
                     Линейная алгебра - это раздел математики, который изучает свойства векторов, матриц, трансформации и
                     их приложения в различных областях, таких как физика, финансы, геометрия и многие другие. Мне
                     нравится линейная алгебра из-за её универсальности, логической стройности и практических применений.
                 </p>
             </li>
-            <li class="column interests-list__card">
-                <h2 class="card__header">Математическая логика</h2>
-                <p class="card__text">
+            <li class="card column interests-list__card">
+                <h2 class="text-title card__header">Математическая логика</h2>
+                <p class="text-content card__text">
                     Математическая логика - это моя страсть! Она привлекает меня своей точностью, ясностью и
                     элегантностью. Решение задач в этой области требует от меня критического мышления, анализа и умения
                     видеть закономерности. В результате я не только узнаю что-то новое, но и развиваю свои навыки.
@@ -76,23 +105,83 @@
         </ul>
     </section>
     <section id="skills-section" class="section skills-section">
-        <h2 class="section-header">Навыки</h2>
+        <h2 class="text-title section-header">Навыки</h2>
         <ul class="row skills-list">
             <li class="column skills-list__item">
-                <h2>Программирование на C++</h2>
+                <h3 class="text-subtitle">Программирование на C++</h3>
             </li>
             <li class="column skills-list__item">
-                <h2>Алгоритмы и структуры данных</h2>
+                <h3 class="text-subtitle">Алгоритмы и структуры данных</h3>
             </li>
             <li class="column skills-list__item">
-                <h2>Frontend-разработка</h2>
+                <h3 class="text-subtitle">Frontend-разработка</h3>
             </li>
         </ul>
     </section>
 </main>
 
 <footer id="footer" class="footer">
-    <a class="footer__link" href="https://t.me/FrekZhasko">Телеграм</a>
+    <button class="footer__feedback_button">Обратная связь</button>
+    <button class="footer__snow_button">Снег</button>
+
+    <ul class="footer__links">
+        <li class="footer__link-item">
+            <a class="footer__link" href="https://t.me/FrekZhasko">Телеграм</a>
+        </li>
+    </ul>
 </footer>
+
+<div class="popup popup__gallery">
+    <div class="popup__container popup__gallery-container">
+        <button class="popup__close-button" type="button" aria-label="Закрыть"></button>
+
+        <button class="popup__control-button popup__next-item-button" type="button" aria-label="Следующий элемент"></button>
+        <img class="popup__image" src="#" alt="Изображение из галлереи">
+        <button class="popup__control-button popup__previous-item-button" type="button" aria-label="Предыдущий элемент"></button>
+    </div>
+</div>
+<div class="popup popup__feedback">
+    <div class="popup__container">
+        <button class="popup__close-button" type="button" aria-label="Закрыть"></button>
+
+        <h2 class="popup__title">Форма обратной связи</h2>
+
+        <form class="popup__form" novalidate>
+            <fieldset class="popup__fieldset">
+                <input class="popup__input popup__email-input" type="email" name="email" placeholder="Электронная почта"
+                       required>
+                <p class="popup__error-message popup__email-error-message popup__error-message_hidden">Некорректная электронная почта</p>
+
+                <input class="popup__input popup__text-input" type="text" name="text"
+                       placeholder="Сообщение (от 5 до 256 символов)" required>
+                <p class="popup__error-message popup__text-error-message popup__error-message_hidden">Текст должен содержать не менее 5 и не более 256 символов</p>
+
+                <input id="popup__checkbox" class="popup__checkbox" type="checkbox" required>
+                <label for="popup__checkbox" class="popup__checkbox-label">
+                    Даю своё согласие на обработку персональных данных
+                </label>
+                <p class="popup__error-message popup__checkbox-error-message popup__error-message_hidden">Необходимо ваше согласие</p>
+            </fieldset>
+
+            <button class="popup__submit-button popup__submit-button_inactive" type="submit">Отправить</button>
+        </form>
+    </div>
+</div>
+<div class="popup popup__popup-with-timer">
+    <div class="popup__container">
+        <button class="popup__close-button" type="button" aria-label="Закрыть"></button>
+        <h2 class="popup__title">Продам гараж</h2>
+        <h2 class="popup__content">8 (800) 555-35-35</h2>
+    </div>
+</div>
+
+<div class="snow"></div>
+
+<script async src="./js/popup_gallery.js"></script>
+<script async src="./js/popup_feedback.js"></script>
+<script async src="./js/popup_popup_with_timer.js"></script>
+<script async src="./js/countdown_timer.js"></script>
+<script async src="./js/snow.js"></script>
+<script async src="./js/fix-menu.js"></script>
 </body>
 </html>
