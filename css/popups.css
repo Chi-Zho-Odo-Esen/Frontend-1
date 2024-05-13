@@ -100,17 +100,6 @@
     opacity: 0.6;
 }
 
-@media (max-width: 619px) {
-    .popup__next-item-button {
-        width: 20px;
-        height: 20px;
-
-        right: 5px;
-
-        background-size: 20px;
-    }
-}
-
 .popup__next-item-button_hidden {
     visibility: hidden;
 }
@@ -199,14 +188,4 @@
 
 .popup__close-button:hover {
     opacity: 0.5;
-}
-
-@media (max-width: 619px) {
-    .popup__close-button {
-        width: 20px;
-        height: 20px;
-        top: -36px;
-        right: 0;
-        background-size: 20px;
-    }
 }
