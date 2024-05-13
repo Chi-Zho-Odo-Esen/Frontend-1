@@ -28,7 +28,7 @@
     text-decoration: none;
 }
 
-.footer__feedback_button {
+.footer__feedback-button {
     margin: 0;
     padding: 5px;
     background: none;
@@ -41,11 +41,11 @@
     font-family: 'Comic Sans MS', sans-serif;
 }
 
-.footer__feedback_button:hover {
+.footer__feedback-button:hover {
     scale: 1.1;
 }
 
-.footer__snow_button {
+.footer__snow-button {
     margin: 0;
     padding: 5px;
     background: none;
@@ -58,6 +58,6 @@
     font-family: 'Comic Sans MS', sans-serif;
 }
 
-.footer__snow_button:hover {
+.footer__snow-button:hover {
     scale: 1.1;
 }

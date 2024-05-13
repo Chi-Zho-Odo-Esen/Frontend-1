@@ -1,4 +1,4 @@
-const snowButton = document.querySelector(".footer__snow_button")
+const snowButton = document.querySelector(".footer__snow-button")
 const snow = document.querySelector(".snow")
 
 const toggleSnow = () => {
